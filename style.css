@@ -1,0 +1,262 @@
+.left {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 2%;
+	width: 336px;
+	margin-top: 70px;
+	height: 320px;
+	border: 3px solid #5FA4D8
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
+	background-color: #5FA4D8;
+	color: white;
+}
+
+#one{
+	border: 3px solid #5FA4D8;
+	position: absolute;
+	width: 65px;
+	height: 49px;
+	transform: translate(-3px,582%);
+}
+
+#two {
+	border: 3px solid #5FA4D8;
+	position: absolute;
+	width: 65px;
+	height: 49px;
+	transform: translate(64px,582%);
+}
+
+#three {
+	border: 3px solid #5FA4D8;
+	position: absolute;
+	width: 65px;
+	height: 49px;
+	transform: translate(132px,582%);
+}
+
+#four {
+	border: 3px solid #5FA4D8;
+	position: absolute;
+	width: 65px;
+	height: 49px;
+	transform: translate(200px,582%);
+	font-family: Square Things;
+}
+
+#five {
+	border: 3px solid #5FA4D8;
+	position: absolute;
+	width: 65px;
+	height: 49px;
+	transform: translate(268px,582%);
+}
+
+
+#three:hover #menu {
+	pointer-events: inherit;
+	transform: translate(-7px,-100%);
+	opacity: 50;
+}
+
+#four:hover #menu2 {
+	pointer-events: inherit;
+	transform: translate(-7px,-100%);
+	opacity: 50;
+}
+
+#menu{
+	background-color: white;
+	display: block;
+	position: absolute;
+	border: 3px solid #5FA4D8;
+	height: 170px;
+	width: 80px;
+	transform: translate(-7px,-114%);
+	box-sizing: border-box;
+	transition: all .5s ease;
+	opacity: 0;
+	pointer-event: none;
+}
+
+#menu2{
+	background-color: white;
+	display: block;
+	position: absolute;
+	border: 3px solid #5FA4D8;
+	height: 80px;
+	width: 80px;
+	transform: translate(-7px,-130%);
+	box-sizing: border-box;
+	transition: all .5s ease;
+	opacity: 0;
+	font-family: Square Things;
+	font-size: 22px;
+	text-align: center;
+	padding: 2px;
+	letter-spacing: -1px;
+}
+
+#boxes:hover, #carts:hover, #arrows:hover, #hearts:hover, #sizing:hover {
+	color: white;
+}
+
+#boxes {
+	font-family: Square Things;
+	font-size: 30px;
+  	text-align: center;
+  	padding-top: 1px;
+}
+
+#carts {
+	font-family: Cartographer;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 31px;
+	padding-top: 2px;
+}
+
+#arrows  {
+	font-family: Arrows tfb;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 31px;
+	padding-top: 2px;
+}
+
+#hearts {
+	font-family: MF Love Dings;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 31px;
+	padding-top: 2px;
+}
+
+#sizing {
+	font-family: Arial;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 20px;
+	padding-top: 8px;
+}
+
+#rotate-arrow {
+	font-family: Arrows tfb;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 19px;
+
+}
+
+.rotate-button {
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	border: 3px solid #5FA4D8;
+	box-sizing: border-box;
+	transform: translate(304px,-7%);
+}
+
+#container, img {
+	position: relative;
+	padding: 5px;
+	width: 320px;
+	height: 300px;
+	padding: none;
+}
+
+
+.tshirts {
+	font-family: T-shirt;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 34px;
+	margin-bottom: 34px;
+}
+
+.tshirts2 {
+	font-family: T-shirt;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 30px;
+	margin-bottom: 34px;
+	margin-left: -44px;
+}
+
+.tshirts3 {
+	font-family: T-shirt;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 26px;
+	margin-bottom: 29px;
+	margin-left: -39px;
+}
+
+.tshirts4 {
+	font-family: T-shirt;
+	text-align: center;
+	color: #5FA4D8;
+	font-size: 22px;
+	margin-bottom: 34px;
+	margin-left: -33px;
+}
+
+.bottom {
+	position: fixed;
+	float: left;
+	width: 336px;
+	height: 57px;
+	transform: translate(0px,676%);
+	font-family: Arial;
+}
+
+pre {
+	margin: 0px;
+	font-family: Arial;
+	font-size: 18px;
+	color: #5FA4D8
+}
+
+.animate-wrap {
+    position: relative;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+}
+
+.animate-wrap input {
+    display: none;
+}
+.animate-wrap [type="radio"]:checked + .animate {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.animate {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+label {
+    position: absolute; top: 0; left: 0; z-index: 2;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.front {
+    z-index: 1;
+}
